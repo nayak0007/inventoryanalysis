@@ -1,0 +1,167 @@
+<form class="col s12" method="post" name="form1" enctype="multipart/form-data">
+               <div class="col s12 m8 l9">
+                  
+				  <?php $x= "SELECT * FROM `categories` WHERE parent_id != 0";
+					  	  $y= mysql_query($x);
+					   ?>
+                       
+                    <label>Select Parent Id</label>
+                    <select name="parent_cat">
+                    
+                      <option selected="selected">Choose your Category</option>
+                      <?php 
+					  while($z=mysql_fetch_array($y)) 
+					  {
+					  ?>
+                      <option value="<?php echo $z['cat_id']; ?>"><?php echo $z['category_title']; ?></option>
+                    <?php } ?>
+                    </select>
+                  </div>
+                <div class="col s12 m8 l9">
+                  <div class="row">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input id="last_name" type="text" class="validate" name="pro_cat">
+                          <label for="last_name">Product Category</label>
+                        </div>
+                        <div class="row">
+                        <div class="input-field col s12">
+                          <textarea id="textarea2" class="materialize-textarea" length="120" name="pro_desc"></textarea>
+                          <label for="textarea1">Product Description</label>
+                        </div>
+                      </div>
+                      
+                        <div class="input-field col s12">
+                          <input id="last_name" type="text" class="validate" name="pro_author">
+                          <label for="last_name">Product Author</label>
+                        </div>
+                        <div class="row">
+                        <div class="input-field col s12">
+                          <textarea id="textarea2" class="materialize-textarea" name="about_book"></textarea>
+                          <label for="textarea1">About Book</label>
+                        </div>
+                      </div>
+                        <div class="input-field col s12">
+                          <input id="last_name" type="text" class="validate" name="publisher">
+                          <label for="last_name">Publisher</label>
+                        </div>
+                        <div class="input-field col s12">
+                          <input id="last_name" type="text" class="validate" name="pro_code">
+                          <label for="last_name">Product Code</label>
+                        </div>
+                        <div class="divider"></div>
+                        </div><div class="divider"></div>
+                        
+                        <div id="input-range" class="section">
+              <h8 class="header">Product Quantity</h8>
+              <div class="row">
+                <div class="col s12 m4 l3">
+                  <p>Choose Product Quantity. This one is set to be a number between 0 and 100.</p>
+                </div>
+                <div class="col s12 m8 l9">
+                    <p class="range-field">
+                      <input type="range" id="test5" min="0" max="100" name="pro_quantity" />
+                    </p>
+                </div>
+              </div>
+            </div><div class="divider"></div>
+            <div id="input-switches" class="section">
+              <h9 class="header">Status of the rpoduct</h9>
+                  <div class="row">
+                <div class="col s12 m4 l3">
+                    <p></p>
+                </div>
+                <div class="col s12 m8 l9">
+                  <!-- Switch -->
+                  <div class="switch">
+                     
+                    <label>
+                      Not available
+                      <input type="checkbox" name="status" value="1">
+                      <span class="lever"></span> Available
+                    </label>
+                  </div>
+                  <br>
+                  <!-- Disabled Switch -->
+                  
+                </div>
+              </div>
+              </div><div class="divider"></div>
+              <div id="input-switches" class="section">
+              <h9 class="header">Feature on the product</h9>
+                  <div class="row">
+                <div class="col s12 m4 l3">
+                    <p></p>
+                </div>
+                <div class="col s12 m8 l9">
+                  <!-- Switch -->
+                  <div class="switch">
+                     
+                    <label>
+                      Offers
+                      <input type="checkbox" name="feature" value="1">
+                      <span class="lever"></span> No Offers
+                    </label>
+                  </div>
+                  <br>
+                  <!-- Disabled Switch -->
+                  
+                </div>
+              </div>
+              </div><div class="divider"></div><div class="divider"></div><div class="divider"></div>
+              <div class="input-field col s12">
+                          <input id="last_name" type="text" class="validate" name="pro_type">
+                          <label for="last_name">Product Type</label>
+               </div>
+               <div class="divider"></div>
+               <div class="divider"></div>
+            <!--Input Date Picker-->
+            <div id="input-date-picker" class="section">
+              <h9 class="header">Date Picker</h9>
+              <div class="row">
+                <div class="col s12 m4 l3">
+                 
+                </div>
+                <div class="col s12 m8 l9">
+                  <input type="date" class="datepicker" name="pro_date">
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+                        
+                  <div id="input-file-input" class="section">
+                		<div class="col s12 m8 l9">
+              		<h6 class="header">Product Image</h6>
+                        <div class="file-field input-field">
+                      <input class="file-path validate" type="text" />
+                      <div class="btn">
+                        <span>Browse</span>
+                        <input type="file" name="img" />
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            <div class="input-field col s12">
+                          <input id="last_name" type="text" class="validate" name="pro_price">
+                          <label for="last_name">Product Price</label>
+                        </div>
+            			<div class="input-field col s12">
+                          <input id="last_name" type="text" class="validate" name="meta_title">
+                          <label for="last_name">Meta Title</label>
+                        </div>
+                        <div class="input-field col s12">
+                          <input id="last_name" type="text" class="validate" name="meta_key">
+                          <label for="last_name">Meta Key</label>
+                        </div>
+                        <div class="input-field col s12">
+                          <textarea id="textarea1" class="materialize-textarea" name="meta_description"></textarea>
+                          <label for="textarea1">Meta Description</label>
+                        </div>
+                 		<div class="col s12 m3 l3 center">
+                     		 <button class="btn waves-effect waves-light blue" type="submit">ADD</button>
+                     	 </div>
+                  		</div>
+                  
+                      
+                    </form>

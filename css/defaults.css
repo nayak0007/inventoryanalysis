@@ -1,0 +1,50 @@
+.element { -ms-overflow-style: none; }
+.element { overflow: -moz-scrollbars-none; }
+.element::-webkit-scrollbar { width: 0 !important }
+
+#main-background{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -1000;
+	background-image: url('../img/back-drop.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	overflow: auto;
+	background-size: cover;
+}
+
+
+#inner-wrapper{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	display: block;
+	padding: 5px;
+	width: 1500px;
+	background:transparent;
+	position: relative;
+	z-index: 1;
+	overflow-y: auto;
+	max-height:800px;
+	height: 100%;
+	-ms-overflow-style: none; 
+
+
+background: transparent;
+}
+
+.row-fluid{
+	padding: 5px;
+	/*background-color: #fff;*/
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	position: relative;
+	z-index: 2;
+}
+body::-moz-scrollbar {
+	 display: none;
+}

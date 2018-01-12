@@ -1,0 +1,140 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+.style1 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style2 {
+	color: #990000;
+	font-weight: bold;
+}
+.style4 {
+	color: #000000;
+	font-weight: bold;
+}
+.style5 {color: #990033}
+.style6 {color: #ECE9D8}
+.style7 {
+	color: #993300;
+	font-weight: bold;
+}
+.style8 {
+	color: #6633CC;
+	font-weight: bold;
+}
+a:link {
+	color: #330066;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFCC00;
+	text-decoration: underline;
+}
+a:visited {
+	color: #330066;
+	text-decoration: none;
+}
+.head1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #FF0000;
+	text-align: center;
+	font-weight: bold;
+}
+.errors {
+
+	color: #FF0000;
+	font-weight: bold;
+}
+.tot {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000000;
+}
+.tot {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+	
+}
+.tans {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color:#00CC66 ;
+}
+.fans {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color:#FF0000 ;
+}
+#abt-box2 p{
+	font-family:lato;
+	color:#fff;
+	font-size:20px;
+}
+
+#abt-box2 h3{
+	color:#2574A9;
+	font-family:open-sans-bold;
+	font-size:40px;
+	font-weight:900;
+	text-align: center;
+	margin-top: -1.3%;
+	text-transform: uppercase;
+
+}
+
+
+#abt-box2{
+		background-color:#89c4f4;
+	display:inline-block;
+	width:85%;
+	height:auto;
+	padding:0;
+	margin-left: 8%;
+	margin-top: 6%;
+	z-index:999;
+}
+#stu-box5{
+	background-color:#89c4f4;
+	position:absolute;
+	width:501px;
+	height:auto;
+	padding:10%;
+	left: 330px;
+	top:27%;
+}
+.menu-wrapper3{
+	position:fixed;
+	height:78px;
+	width:100%;
+	background:#22313F;
+	z-index:999;
+}
+.menu-wrapper3 h1{
+	color:#fff;
+	font-family:lato;
+	font-size:25px;
+}
+
+.menu-wrapper3 img{
+border-radius: 50%;
+}
+body, html{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	padding:0 !important;
+	text-align:left;
+}
+h1{
+	text-align:center;
+	font-family:"Cooper Black";
+	font-size: 36px;
+	color:#1111DF;
+}
